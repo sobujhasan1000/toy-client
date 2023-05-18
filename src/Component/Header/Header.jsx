@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -8,11 +9,12 @@ const Header = () => {
                     <a className="btn btn-ghost normal-case text-xl">Joyful animals</a>
                 </div>
                 <div className="flex-none">
-                    <ul className="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>all toys</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>singup</a></li>
+                    <ul className="menu menu-horizontal px-1 gap-2">
+                    <Link to='/'>Home</Link>
+                    <Link>all toys</Link>
+                    <Link>Blog</Link>
+                    <Link to='/singin'>singup</Link>
+                    <Link to='/loging'>Loging</Link>
                     </ul>
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -23,7 +25,7 @@ const Header = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Add Toy</a></li>
                             <li><a>MY Toys</a></li>
-                            <li><a>Logout</a></li>
+                            <li><Link to='/logOut'>Logout</Link></li>
                         </ul>
                     </div>
                 </div>
