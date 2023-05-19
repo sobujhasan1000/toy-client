@@ -9,8 +9,8 @@ import Main from './LayOut/Main';
 import Home from './Component/Home/Home';
 import SingIn from './Component/SingIn/SingIn';
 import Login from './Component/Login/Login';
-import Logout from './Component/LogOut/Logout';
 import AuthProvider from './Provider/AuthProvider';
+import AddToy from './Component/AddToy/AddToy';
 
 const router = createBrowserRouter([
   {
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
         element:<Login></Login>
       },
       {
-        path:"/logout",
-        element:<Logout></Logout>
+        path:"/addtoy",
+        element:<AddToy></AddToy>
       }
     ]
   },
