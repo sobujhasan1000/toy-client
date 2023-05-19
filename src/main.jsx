@@ -11,6 +11,7 @@ import SingIn from './Component/SingIn/SingIn';
 import Login from './Component/Login/Login';
 import AuthProvider from './Provider/AuthProvider';
 import AddToy from './Component/AddToy/AddToy';
+import AllToy from './Component/AllToys/AllToy';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path:"/loging",
         element:<Login></Login>
+      },
+      {
+        path:"/alltoys",
+        element:<AllToy></AllToy>,
+        loader: ()=>fetch('http://localhost:5000/postanimals')
       },
       {
         path:"/addtoy",
