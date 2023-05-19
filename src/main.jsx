@@ -10,6 +10,7 @@ import Home from './Component/Home/Home';
 import SingIn from './Component/SingIn/SingIn';
 import Login from './Component/Login/Login';
 import Logout from './Component/LogOut/Logout';
+import AuthProvider from './Provider/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
