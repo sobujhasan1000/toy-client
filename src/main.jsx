@@ -15,6 +15,7 @@ import AllToy from './Component/AllToys/AllToy';
 import Toyview from './Component/ToyView/Toyview';
 import MyToys from './Component/MyToys/MyToys';
 import UPdatetoy from './Component/UpdateToy/UPdatetoy';
+import Page4o4 from './Component/Page4o4/Page4o4';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path:'*',
+    element:<Page4o4></Page4o4>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
