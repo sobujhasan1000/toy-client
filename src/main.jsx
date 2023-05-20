@@ -16,6 +16,7 @@ import Toyview from './Component/ToyView/Toyview';
 import MyToys from './Component/MyToys/MyToys';
 import UPdatetoy from './Component/UpdateToy/UPdatetoy';
 import Page4o4 from './Component/Page4o4/Page4o4';
+import Blog from './Component/Blog/Blog';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path:"/addtoy",
         element:<AddToy></AddToy>
+      },
+      {
+        path:"/blog",
+        element:<Blog></Blog>
       }
     ]
   },

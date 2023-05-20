@@ -11,15 +11,16 @@ const Header = () => {
     }
     return (
         <>
-            <div className="navbar bg-base-100 mb-4">
+            <div className="navbar bg-base-200 mb-4">
                 <div className="flex-1">
+                    <img className='h-8' src="https://cdn.icon-icons.com/icons2/1929/PNG/512/iconfinder-lion-4591886_122125.png" alt="" />
                     <a className="btn btn-ghost normal-case text-xl">Joyful animals</a>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1 gap-2">
                         <Link to='/'>Home</Link>
                         <Link to='/alltoys'>all toys</Link>
-                        <Link>Blog</Link>
+                        <Link to='/blog'>Blog</Link>
                     </ul>
                     <div className="dropdown dropdown-end">
                         {user ?
