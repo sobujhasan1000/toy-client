@@ -68,7 +68,7 @@ const Mytoy = ({toy}) => {
                             <td>{toy.price}</td>
                             <td>{toy.totalQuantity}</td>
                             <th>
-                                <Link to={``}><button className="btn btn-ghost btn-xs">Update</button></Link>
+                                <Link to={`/update/${toy._id}`}><button className="btn btn-ghost btn-xs">Update</button></Link>
                             </th>
                             <th>
                                 <Link><button onClick={()=>handeldelet(toy._id)} className="btn btn-ghost btn-xs">Delet</button></Link>

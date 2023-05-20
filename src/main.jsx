@@ -14,6 +14,7 @@ import AddToy from './Component/AddToy/AddToy';
 import AllToy from './Component/AllToys/AllToy';
 import Toyview from './Component/ToyView/Toyview';
 import MyToys from './Component/MyToys/MyToys';
+import UPdatetoy from './Component/UpdateToy/UPdatetoy';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
       {
         path:"/singletoys/:id",
         element:<Toyview></Toyview>,
+        loader: ({params})=>fetch(`http://localhost:5000/postanimals/${params.id}`)
+      },
+      {
+        path:"/update/:id",
+        element:<UPdatetoy></UPdatetoy>,
         loader: ({params})=>fetch(`http://localhost:5000/postanimals/${params.id}`)
       },
       {

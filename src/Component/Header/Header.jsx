@@ -18,7 +18,7 @@ const Header = () => {
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1 gap-2">
                         <Link to='/'>Home</Link>
-                        <Link>all toys</Link>
+                        <Link to='/alltoys'>all toys</Link>
                         <Link>Blog</Link>
                     </ul>
                     <div className="dropdown dropdown-end">
