@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Toys = ({ toy }) => {
     return (
@@ -28,7 +29,7 @@ const Toys = ({ toy }) => {
                             <td>{toy.subCatagory}</td>
                             <td>{toy.totalQuantity}</td>
                             <th>
-                                <button className="btn btn-ghost btn-xs">details</button>
+                                <Link to={`/singletoys/${toy._id}`}><button className="btn btn-ghost btn-xs">details</button></Link>
                             </th>
                         </tr>
 
