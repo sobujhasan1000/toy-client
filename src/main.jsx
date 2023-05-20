@@ -17,6 +17,7 @@ import MyToys from './Component/MyToys/MyToys';
 import UPdatetoy from './Component/UpdateToy/UPdatetoy';
 import Page4o4 from './Component/Page4o4/Page4o4';
 import Blog from './Component/Blog/Blog';
+import PrivateRotute from './Privateroute/PrivateRotute';
 
 const router = createBrowserRouter([
   {
@@ -37,12 +38,12 @@ const router = createBrowserRouter([
       },
       {
         path:"/alltoys",
-        element:<AllToy></AllToy>,
+        element:<PrivateRotute><AllToy></AllToy></PrivateRotute>,
         loader: ()=>fetch('http://localhost:5000/postanimals')
       },
       {
         path:"/mytoys",
-        element:<MyToys></MyToys>,
+        element:<PrivateRotute><MyToys></MyToys></PrivateRotute>,
         loader: ()=>fetch('http://localhost:5000/postanimals')
       },
       {
