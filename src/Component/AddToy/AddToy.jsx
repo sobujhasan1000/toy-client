@@ -43,13 +43,13 @@ const AddToy = () => {
                 <div className='flex gap-10 justify-center my-10'>
                     <select className='w-72 p-1 rounded-md' {...register("catagory")}>
                         <option value="Hunter">Hunter</option>
-                        <option value="bird">Birds</option>
-                        <option value="pet animal">pets animal</option>
+                        <option value="Pets">Pets</option>
+                        <option value="bird">The bird</option>
                     </select>
                     <select className='w-72 p-1 rounded-md' {...register("subCatagory")}>
                         <option value="tiger">tiger</option>
-                        <option value="pet bird">pets Birds</option>
-                        <option value="cow">cow</option>
+                        <option value="cow">Cow</option>
+                        <option value="parrots">Parrots</option>
                     </select>
                 </div>
                

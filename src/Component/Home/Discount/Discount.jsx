@@ -1,9 +1,13 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Discount = () => {
     return (
         <>
-           <div className='lg:flex my-6 bg-green-100'>
+           <div className='lg:flex my-6 bg-green-100' data-aos="fade-up-right">
             <div className='w-2/3 p-10'>
                 <img className='rounded-xl' src="https://thumbs.dreamstime.com/b/special-offer-sale-shopping-shop-retail-young-children-kids-marketing-special-offer-sale-shopping-shop-retail-young-children-kids-112206104.jpg" alt="" />
             </div>

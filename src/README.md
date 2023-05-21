@@ -6,7 +6,7 @@
 
 -then have a carusel there is a 4 photo if you click then show another photo see you. 
 
-- and gallary section have a many toys photo. this toy photo only this company selling.
+-and gallary section have a many toys photo. this toy photo only this company selling.
 
 -another section is a discount section when some times have a many offer only this time show this offer. 
 
@@ -14,4 +14,4 @@
 
 -and footer section is a company logo name and social link here. 
 
-- if you don't  loging you don't see private routes.private routes is add products,my toys, and singel products. 
+-if you don't  loging you don't see private routes.private routes is add products,my toys, and singel products. 
