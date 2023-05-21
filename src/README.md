@@ -1,1 +1,9 @@
--this is my live website link    
+-this is my live website link    https://joyful-animals.web.app/ 
+-this website is a ecommerce site and only buy animals toy . 
+-first there is a nave bar and here is a company logo,name, home page, all toy page, blog page and user profile. 
+-then have a carusel there is a 4 photo if you click then show another photo see you. 
+- and gallary section have a many toys photo. this toy photo only this company selling.
+-another section is a discount section when some times have a many offer only this time show this offer. 
+- and finally you see products photo and buy this toys. 
+-and footer section is a company logo name and social link here. 
+- if you don't  loging you don't see private routes.private routes is add products,my toys, and singel products. 
