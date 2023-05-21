@@ -18,6 +18,7 @@ import UPdatetoy from './Component/UpdateToy/UPdatetoy';
 import Page4o4 from './Component/Page4o4/Page4o4';
 import Blog from './Component/Blog/Blog';
 import PrivateRotute from './Privateroute/PrivateRotute';
+import Shop from './Component/Shop/Shop';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         loader: ()=>fetch('http://localhost:5000/postanimals')
       },
       {
+        path:"/shop",
+        element:<Shop></Shop>,
+        loader: ()=>fetch('http://localhost:5000/postanimals')
+      },
+      {
         path:"/mytoys",
         element:<PrivateRotute><MyToys></MyToys></PrivateRotute>,
         loader: ()=>fetch('http://localhost:5000/postanimals')
@@ -58,7 +64,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/addtoy",
-        element:<AddToy></AddToy>
+        element:<PrivateRotute><AddToy></AddToy></PrivateRotute>
       },
       {
         path:"/blog",

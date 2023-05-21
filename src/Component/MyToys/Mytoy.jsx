@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const Mytoy = ({toy}) => {
-
+const Mytoy = ({toy,toyss,settoys}) => {
     const handeldelet=_id=>{
                 console.log(_id)
                 Swal.fire({
@@ -35,6 +34,8 @@ const Mytoy = ({toy}) => {
                         'Your file has been deleted.',
                         'success'
                       ) 
+                      const remaning=toyss.filter(toys=>toys._id !== _id);
+                      settoys(remaning);
                         }
                     })
                     }
@@ -48,12 +49,12 @@ const Mytoy = ({toy}) => {
                     {/* head */}
                     <thead>
                         <tr>
-                            <th>seller Name</th>
                             <th>toy name</th>
+                            <th>selar name</th>
                             <th>price</th>
-                            <th>sub catagory</th>
-                            <th>update tory</th>
-                            <th>delete tory</th>
+                            <th>quantity</th>
+                            <th></th>
+                            <th></th>
                             <th></th>
                         </tr>
                     </thead>
