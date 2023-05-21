@@ -6,7 +6,7 @@ const Shop = () => {
     const loadtoys=useLoaderData()
     const[toys,settoy]=useState()
     useEffect(()=>{
-        fetch('http://localhost:5000/postanimals')
+        fetch('https://joyful-animals-server.vercel.app/postanimals')
         .then(res=>res.json())
         .then(data=>settoy(data))
     },[])

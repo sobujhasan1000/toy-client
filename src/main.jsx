@@ -12,13 +12,14 @@ import Login from './Component/Login/Login';
 import AuthProvider from './Provider/AuthProvider';
 import AddToy from './Component/AddToy/AddToy';
 import AllToy from './Component/AllToys/AllToy';
-import Toyview from './Component/ToyView/Toyview';
 import MyToys from './Component/MyToys/MyToys';
 import UPdatetoy from './Component/UpdateToy/UPdatetoy';
 import Page4o4 from './Component/Page4o4/Page4o4';
 import Blog from './Component/Blog/Blog';
 import PrivateRotute from './Privateroute/PrivateRotute';
 import Shop from './Component/Shop/Shop';
+import Toys from './Component/AllToys/Toys';
+import SingelToyview from './Component/ToyView/SingelToyview';
 
 const router = createBrowserRouter([
   {
@@ -39,32 +40,36 @@ const router = createBrowserRouter([
       },
       {
         path:"/alltoys",
-        element:<PrivateRotute><AllToy></AllToy></PrivateRotute>,
-        loader: ()=>fetch('http://localhost:5000/postanimals')
+        element:<AllToy></AllToy>,
+        loader: ()=>fetch('https://joyful-animals-server.vercel.app/postanimals')
       },
       {
         path:"/shop",
         element:<Shop></Shop>,
-        loader: ()=>fetch('http://localhost:5000/postanimals')
+        loader: ()=>fetch('https://joyful-animals-server.vercel.app/postanimals')
       },
       {
         path:"/mytoys",
         element:<PrivateRotute><MyToys></MyToys></PrivateRotute>,
-        loader: ()=>fetch('http://localhost:5000/postanimals')
+        loader: ()=>fetch('https://joyful-animals-server.vercel.app/postanimals')
       },
       {
         path:"/singletoys/:id",
-        element:<Toyview></Toyview>,
-        loader: ({params})=>fetch(`http://localhost:5000/postanimals/${params.id}`)
+        element:<PrivateRotute><SingelToyview></SingelToyview></PrivateRotute>,
+        loader: ({params})=>fetch(`https://joyful-animals-server.vercel.app/postanimals/${params.id}`)
       },
       {
         path:"/update/:id",
         element:<UPdatetoy></UPdatetoy>,
-        loader: ({params})=>fetch(`http://localhost:5000/postanimals/${params.id}`)
+        loader: ({params})=>fetch(`https://joyful-animals-server.vercel.app/postanimals/${params.id}`)
       },
       {
         path:"/addtoy",
         element:<PrivateRotute><AddToy></AddToy></PrivateRotute>
+      },
+      {
+        path:"/toys",
+        element:<PrivateRotute><Toys></Toys></PrivateRotute>
       },
       {
         path:"/blog",

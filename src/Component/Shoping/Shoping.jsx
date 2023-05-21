@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Shoping = ({ toy }) => {
     return (
@@ -12,7 +13,7 @@ const Shoping = ({ toy }) => {
                     <p>rating {toy.rating}</p>
                     </div>
                     <div className="card-actions justify-end">
-                        <button className=" bg-green-300 p-1 rounded-md">view details</button>
+                        <Link to={`/singletoys/${toy._id}`}><button className='p-1 bg-green-300 rounded-md'>view details</button></Link>
                     </div>
                 </div>
             </div>

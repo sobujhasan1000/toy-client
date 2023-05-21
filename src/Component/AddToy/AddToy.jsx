@@ -5,7 +5,7 @@ const AddToy = () => {
     const { register, handleSubmit,watch,
         formState: {errors},} = useForm();
     const onSubmit = (data) =>
-    fetch('http://localhost:5000/postanimals',{
+    fetch('https://joyful-animals-server.vercel.app/postanimals',{
         method:'POST',
         headers:{
             'content-type':'application/json'

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 
-const Toyview = () => {
+const SingelToyview = () => {
     const toys = useLoaderData()
     return (
         <div>
@@ -29,4 +29,4 @@ const Toyview = () => {
     );
 };
 
-export default Toyview;
+export default SingelToyview;
