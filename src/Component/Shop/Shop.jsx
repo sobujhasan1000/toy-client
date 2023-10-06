@@ -4,7 +4,7 @@ import Shoping from '../Shoping/Shoping';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const Shop = () => {
-    const loadtoys = useLoaderData()
+    // const loadtoys = useLoaderData()
     const [toys, settoy] = useState()
     useEffect(() => {
         fetch('https://joyful-animals-server.vercel.app/postanimals')
@@ -13,16 +13,16 @@ const Shop = () => {
     }, [])
     console.log(toys)
     return (
-        <div>
-            <h1 className='text-center text-xl'> shoping now</h1>
-            <Tabs className='' defaultIndex={1} onSelect={(index) => console.log(index)}>
-                <TabList className='flex gap-6 text-center p-2'>
-                    <Tab className='bg-green-200 px-4 rounded-md'><button>tiger</button></Tab>
-                    <Tab className='bg-green-200 px-4 rounded-md'><button>cow</button></Tab>
-                    <Tab className='bg-green-200 px-4 rounded-md'><button>bard</button></Tab>
+        <div className='text-center my-10'>
+            <h1 className='text-center text-2xl uppercase font-bold'> shoping now</h1>
+            <Tabs className='text-center' defaultIndex={1} onSelect={(index) => console.log(index)}>
+                <TabList className='flex gap-6 text-center justify-center items-center my-6 '>
+                    <Tab className='p-2 bg-green-300 rounded-md hover:bg-green-400'><button>tiger</button></Tab>
+                    <Tab className='p-2 bg-green-300 rounded-md hover:bg-green-400'><button>cow</button></Tab>
+                    <Tab className='p-2 bg-green-300 rounded-md hover:bg-green-400'><button>bard</button></Tab>
                 </TabList>
             </Tabs>
-            <div className='grid grid-cols-4 gap-2' >
+            <div className='grid grid-cols-2 lg:grid-cols-4 md:  gap-4' >
                 {
                     toys?.map(toy => <Shoping
                         key={toy._id}

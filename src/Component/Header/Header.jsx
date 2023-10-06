@@ -11,16 +11,16 @@ const Header = () => {
     }
     return (
         <>
-            <div className="navbar bg-base-200 mb-4">
+            <div className="navbar bg-[#4ad1ad] mb-4 rounded-md">
                 <div className="flex-1">
                     <img className='h-8' src="https://cdn.icon-icons.com/icons2/1929/PNG/512/iconfinder-lion-4591886_122125.png" alt="" />
                     <a className="btn btn-ghost normal-case text-xl">Joyful animals</a>
                 </div>
                 <div className="flex-none">
-                    <ul className="menu menu-horizontal px-1 gap-2">
-                        <Link to='/'>Home</Link>
-                        <Link to='/alltoys'>all toys</Link>
-                        <Link to='/blog'>Blog</Link>
+                    <ul className="menu menu-horizontal px-4 gap-4">
+                        <Link className='hover:bg-green-200 p-1 rounded-md' to='/'>Home</Link>
+                        <Link className='hover:bg-green-200 p-1 rounded-md' to='/alltoys'>all toys</Link>
+                        <Link className='hover:bg-green-200 p-1 rounded-md' to='/blog'>Blog</Link>
                     </ul>
                     <div className="dropdown dropdown-end">
                         {user ?
@@ -39,8 +39,8 @@ const Header = () => {
                             </>
                             :
                             <>
-                                <Link className='m-2' to='/singin'>singUp</Link>
-                                <Link to='/loging'>LogIn</Link>
+                                <Link className='mx-4 hover:bg-green-200 p-1 rounded-md' to='/singin'>singUp</Link>
+                                <Link className='hover:bg-green-200 p-1 rounded-md' to='/loging'>LogIn</Link>
                             </>}
                     </div>
                 </div>
